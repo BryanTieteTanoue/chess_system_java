@@ -3,22 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package application;
+package chess.pieces;
 
 import boardGame.Board;
-import boardGame.Position;
-import chess.ChessMatch;
+import chess.ChessPiece;
+import chess.Color;
 
 /**
  *
  * @author Bryan
  */
-public class Program {
+public class King extends ChessPiece{
     
-    public static void main(String[] args) {
-        ChessMatch chessMatch = new ChessMatch();
-        
-        UI.printBoard(chessMatch.getPieces());
+    public King(Board board, Color color) {
+        super(board, color);
+    }
+    
+    @Override
+    public String toString(){
+        return "K";
     }
     
 }
